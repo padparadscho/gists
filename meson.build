@@ -31,13 +31,13 @@ app_dependencies = [
   gio_dep,
   gtk_dep,
   adwaita_dep,
-  json_glib_dep,
-  libsecret_dep,
 ]
 
 test_dependencies = [
   glib_dep,
   gio_dep,
+  json_glib_dep,
+  libsecret_dep,
 ]
 
 vala_generated_c_args = cc.get_supported_arguments(

@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 namespace Gists.GitHub {
-    public sealed class Credentials : Object {
+    internal sealed class Credentials : Object {
         private const int64 FORMAT_VERSION = 1;
 
         public string access_token { get; private set; }

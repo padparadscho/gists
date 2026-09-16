@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 namespace Gists.GitHub {
-    public sealed class CredentialStore : Object {
+    internal sealed class CredentialStore : Object {
         private const string ACCOUNT_ATTRIBUTE = "account";
         private const string DEFAULT_ACCOUNT = "default";
 
