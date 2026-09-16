@@ -23,12 +23,16 @@ glib_dep = dependency('glib-2.0', version: '>= 2.88')
 gio_dep = dependency('gio-2.0', version: '>= 2.88')
 gtk_dep = dependency('gtk4', version: '>= 4.22')
 adwaita_dep = dependency('libadwaita-1', version: '>= 1.9')
+json_glib_dep = dependency('json-glib-1.0', version: '>= 1.10')
+libsecret_dep = dependency('libsecret-1', version: '>= 0.21')
 
 app_dependencies = [
   glib_dep,
   gio_dep,
   gtk_dep,
   adwaita_dep,
+  json_glib_dep,
+  libsecret_dep,
 ]
 
 test_dependencies = [
@@ -37,6 +41,8 @@ test_dependencies = [
 ]
 
 vala_generated_c_args = cc.get_supported_arguments(
+  '-Wno-discarded-qualifiers',
+  '-Wno-unused-but-set-variable',
   '-Wno-unused-parameter',
   '-Wno-unused-variable',
 )

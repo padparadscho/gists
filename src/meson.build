@@ -1,3 +1,9 @@
+github_auth_sources = files(
+  'github/credential-error.vala',
+  'github/credential-store.vala',
+  'github/credentials.vala',
+)
+
 app_sources = files(
   'application.vala',
   'main.vala',
@@ -7,6 +13,7 @@ app_sources = files(
 executable(
   binary_name,
   app_sources,
+  github_auth_sources,
   meson.project_build_root() / 'config.vala',
   gists_resources,
   c_args: vala_generated_c_args,
