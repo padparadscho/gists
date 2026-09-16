@@ -1,0 +1,8 @@
+// SPDX-FileCopyrightText: 2026 Padparadscho <contact@padparadscho.com>
+// SPDX-License-Identifier: AGPL-3.0-only
+
+namespace Gists.Config {
+    public const string APP_ID = @APP_ID@;
+    public const string APP_NAME = @APP_NAME@;
+    public const string VERSION = @VERSION@;
+}
